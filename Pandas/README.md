@@ -6,7 +6,7 @@ This section is part of my broader **Data Science & Machine Learning roadmap**, 
 
 ---
 
-## 📚 Notebooks
+##  Notebooks
 
 | Notebook                     | Description                                                                                                          |
 | ---------------------------- | -------------------------------------------------------------------------------------------------------------------- |
@@ -16,7 +16,7 @@ This section is part of my broader **Data Science & Machine Learning roadmap**, 
 
 ---
 
-## 🧠 Topics Covered
+##  Topics Covered
 
 ### Series
 
@@ -77,7 +77,7 @@ Pandas plotting provides a convenient interface for creating quick visualization
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * Python
 * Pandas
@@ -87,7 +87,7 @@ Pandas plotting provides a convenient interface for creating quick visualization
 
 ---
 
-## 🎯 Learning Objective
+##  Learning Objective
 
 The goal of this section is to develop practical skills in:
 
@@ -103,7 +103,7 @@ The goal of this section is to develop practical skills in:
 
 ---
 
-## 📂 Folder Structure
+##  Folder Structure
 
 ```text
 Pandas/
@@ -116,7 +116,7 @@ Pandas/
 
 ---
 
-## 🚀 Learning Progress
+##  Learning Progress
 
 * [x] Series fundamentals
 * [x] DataFrame fundamentals
@@ -133,7 +133,7 @@ Pandas/
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Hemant Narute**
 
