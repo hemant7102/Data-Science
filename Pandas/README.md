@@ -6,7 +6,7 @@ This section is part of my broader **Data Science & Machine Learning roadmap**, 
 
 ---
 
-## 📚 Notebooks
+##  Notebooks
 
 | Notebook                              | Description                                                                                 |
 | ------------------------------------- | ------------------------------------------------------------------------------------------- |
@@ -19,7 +19,7 @@ This section is part of my broader **Data Science & Machine Learning roadmap**, 
 
 ---
 
-## 🧠 Topics Covered
+##  Topics Covered
 
 ### 1. Pandas Series
 
@@ -127,7 +127,7 @@ Topics include:
 
 ---
 
-## 📊 Data Visualization
+##  Data Visualization
 
 The Pandas visualization notebook covers:
 
@@ -143,7 +143,7 @@ Pandas plotting is used for quick exploratory visualization of DataFrame and Ser
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 * Python
 * Pandas
@@ -153,7 +153,7 @@ Pandas plotting is used for quick exploratory visualization of DataFrame and Ser
 
 ---
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 The goal of this section is to develop practical skills in:
 
@@ -170,7 +170,7 @@ The goal of this section is to develop practical skills in:
 
 ---
 
-## 📂 Folder Structure
+##  Folder Structure
 
 ```text
 Pandas/
@@ -187,7 +187,7 @@ Pandas/
 
 ---
 
-## 🚀 Learning Progress
+##  Learning Progress
 
 * [x] Series fundamentals
 * [x] DataFrame fundamentals
@@ -209,7 +209,7 @@ Pandas/
 
 ---
 
-## 🔜 Future Improvements
+##  Future Improvements
 
 * Advanced GroupBy operations
 * Pivot tables
@@ -222,7 +222,7 @@ Pandas/
 
 ---
 
-## 👨‍💻 Author
+## 👨 Author
 
 **Hemant Narute**
 
