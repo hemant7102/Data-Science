@@ -17,6 +17,10 @@ This section is part of my broader Data Science & Machine Learning roadmap, focu
 | `Exercise-on-groupby.ipynb` | Practical exercises for understanding and applying GroupBy operations |
 | `merging-joining-concatenating.ipynb` | Combining DataFrames using merge, join, and concatenation |
 | `MultiIndex-series.ipynb` | MultiIndex Series and hierarchical indexing |
+| `Date-and-Time.ipynb` | Working with dates, times, and datetime data using Pandas |
+| `Time-Series-Analysis.ipynb` | Time-series data analysis using Pandas |
+| `Pandas-case-study-text-dataset.ipynb` | Practical Pandas case study using a text dataset |
+| `pandas-case-study-on-text-dataset.ipynb` | Additional practical case study using text-based data |
 
 ---
 
@@ -115,7 +119,46 @@ Topics include:
 - Index-based data organization
 - Accessing hierarchical data
 
-### 8. Data Visualization
+### 8. Date and Time
+
+The `Date-and-Time.ipynb` notebook focuses on working with date and time data.
+
+Topics include:
+
+- Date and time values
+- Datetime conversion
+- Working with dates
+- Working with time-related data
+- Date-based data manipulation
+
+### 9. Time Series Analysis
+
+The `Time-Series-Analysis.ipynb` notebook focuses on analyzing data organized over time.
+
+Topics include:
+
+- Time-based data
+- Datetime indexes
+- Time-based selection
+- Time-series data manipulation
+- Time-based analysis
+
+### 10. Text Dataset Case Studies
+
+The text-dataset case study notebooks provide practical Pandas exercises using text-based datasets.
+
+Topics include:
+
+- Loading text datasets
+- Data inspection
+- Data cleaning
+- Filtering
+- Data transformation
+- Practical data analysis
+
+---
+
+## Data Visualization
 
 The Pandas visualization notebook covers:
 
@@ -138,14 +181,12 @@ The Pandas section contains datasets used for practical exercises and notebook e
 | Dataset | Purpose |
 |---|---|
 | `batsman_runs_ipl.csv` | IPL batsman analysis |
-| `bollywood.csv` | Bollywood/movie data analysis |
+| `bollywood.csv` | Bollywood data analysis |
 | `deliveries.csv` | IPL delivery-level analysis and GroupBy exercises |
 | `imdb-top-1000.csv` | Movie data analysis |
 | `ipl-matches.csv` | IPL match analysis |
-| `kohli_ipl.csv` | Virat Kohli IPL analysis |
+| `kohli_ipl.csv` | IPL analysis |
 | `movies.csv` | Movie data analysis |
-
-These datasets support practical learning through filtering, grouping, aggregation, sorting, visualization, and other Pandas operations.
 
 ---
 
@@ -172,8 +213,11 @@ The goal of this section is to develop practical skills in:
 7. Grouping and aggregating data
 8. Combining multiple datasets
 9. Working with hierarchical indexes
-10. Creating data visualizations
-11. Solving practical data analysis exercises
+10. Working with date and time data
+11. Performing time-series analysis
+12. Working with text datasets
+13. Creating data visualizations
+14. Solving practical data analysis exercises
 
 ---
 
@@ -191,6 +235,10 @@ Pandas/
 ├── Exercise-on-groupby.ipynb
 ├── merging-joining-concatenating.ipynb
 ├── MultiIndex-series.ipynb
+├── Date-and-Time.ipynb
+├── Time-Series-Analysis.ipynb
+├── Pandas-case-study-text-dataset.ipynb
+├── pandas-case-study-on-text-dataset.ipynb
 │
 ├── batsman_runs_ipl.csv
 ├── bollywood.csv
