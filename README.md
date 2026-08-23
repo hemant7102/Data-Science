@@ -40,6 +40,7 @@ This repository contains clean and documented code covering **foundational mathe
 - Seaborn
 - Plotly
 - Statistical Visualization
+- Interactive Visualization
 
 ### Machine Learning
 
@@ -100,13 +101,7 @@ Data-Science/
 │
 ├── Numpy/
 │   ├── README.md
-│   ├── numpy.ipynb
-│   ├── numpy2.ipynb
-│   ├── Advanced numpy.ipynb
-│   ├── Numpy_tricks.ipynb
-│   ├── Numpy-3D-Graphs-Revision.ipynb
-│   ├── numpy-Graph-plot.ipynb
-│   └── quize_numpy.ipynb
+│   └── NumPy notebooks
 │
 ├── Pandas/
 │   ├── README.md
@@ -119,6 +114,10 @@ Data-Science/
 │   ├── IPL analysis notebooks
 │   ├── Text dataset case studies
 │   └── Supporting datasets
+│
+├── Plotly/
+│   ├── README.md
+│   └── Plotly notebooks
 │
 ├── Statistics/
 │
