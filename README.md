@@ -99,45 +99,42 @@ This repository currently includes practical learning material for the following
 
 The Matplotlib section focuses on graph plotting, visualization fundamentals, customization, axes, labels, legends, grids, and dataset visualization.
 
-Detailed documentation:
-
-Matplotlib/README.md
-
+**Documentation:** [Matplotlib README](./Matplotlib/README.md)
 
 ### Seaborn
 
 The Seaborn section focuses on statistical data visualization and creating informative plots for Exploratory Data Analysis.
 
-Detailed documentation:
-
-Seaborn/README.md
+**Documentation:** [Seaborn README](./Seaborn/README.md)
 
 ### Plotly
 
 The Plotly section focuses on interactive data visualization using Plotly and Plotly Express.
 
-Detailed documentation:
+**Documentation:** [Plotly README](./Plotly/README.md)
 
-Plotly/README.md
+---
 
 ## Learning Progress
 
-| Topic            | Status      |
-| ---------------- | ----------- |
-| NumPy            | In Progress |
-| Pandas           | In Progress |
-| Matplotlib       | In Progress |
-| Seaborn          | In Progress |
-| Plotly           | In Progress |
-| Statistics       | Planned     |
-| Machine Learning | Planned     |
-| Deep Learning    | Planned     |
-| MLOps            | Planned     |
-| Projects         | Planned     |
+| Topic | Status |
+|---|---|
+| NumPy | In Progress |
+| Pandas | In Progress |
+| Matplotlib | In Progress |
+| Seaborn | In Progress |
+| Plotly | In Progress |
+| Statistics | Planned |
+| Machine Learning | Planned |
+| Deep Learning | Planned |
+| MLOps | Planned |
+| Projects | Planned |
 
+---
 
 ## Repository Structure
 
+```text
 Data-Science/
 │
 ├── README.md
@@ -202,6 +199,8 @@ Data-Science/
 
 Additional technologies will be added as the learning roadmap progresses.
 
+---
+
 ## Learning Objectives
 
 The main objectives of this repository are to:
@@ -217,6 +216,7 @@ The main objectives of this repository are to:
 9. Understand MLOps and Machine Learning deployment workflows.
 10. Build real-world Data Science and Machine Learning projects.
 
+---
 
 ## Future Improvements
 
@@ -235,9 +235,10 @@ The repository will continue to grow with:
 - End-to-End Projects
 - Real-world datasets and case studies
 
+---
 
 ## Author
 
 ### Hemant Narute
 
-Data Science | Data Analytics | Machine Learning
+**Data Science | Data Analytics | Machine Learning**
