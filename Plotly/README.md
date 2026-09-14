@@ -1,54 +1,50 @@
 # Plotly Learning
 
-A practical collection of Plotly learning, visualization, and interactive data analysis notebooks.
+A practical collection of Plotly notebooks focused on interactive data visualization using Python.
 
-This section is part of my broader Data Science & Machine Learning roadmap, focusing on creating interactive and informative visualizations using Plotly.
+This section is part of my Data Science & Machine Learning learning repository.
 
 ---
 
 ## Notebooks
 
-The Plotly section contains practical notebooks covering interactive data visualization and chart creation.
-
 | Notebook | Description |
 |---|---|
-| Plotly notebooks | Practical examples and experiments with Plotly |
-| Interactive visualization notebooks | Creating interactive charts and exploring data visually |
+| `Plotly.ipynb` | Plotly fundamentals and interactive data visualization |
+| `Plotly-express.ipynb` | Interactive visualization using Plotly Express |
 
 ---
 
 ## Topics Covered
 
-### Interactive Visualization
-
-- Interactive charts
-- Interactive data exploration
-- Plotly figures
-- Customizing charts
-- Updating chart layouts
-- Titles and axis labels
-- Legends
-- Hover information
-
-### Charts and Graphs
-
+- Plotly fundamentals
+- Plotly Express
+- Interactive visualizations
 - Line charts
 - Bar charts
 - Scatter plots
-- Histograms
-- Box plots
-- Pie charts
-- Area charts
-- Other interactive visualizations
+- Data visualization
+- Graph customization
+- Interactive charts
+- Figure customization
+- Axes and labels
+- Titles
+- Legends
+- Hover information
+- Exploratory Data Analysis
 
-### Data Visualization
+---
 
-- Visualizing Pandas DataFrames
-- Exploring relationships between variables
-- Comparing categories
-- Distribution analysis
-- Time-based visualization
-- Interactive exploratory data analysis
+## Interactive Visualization
+
+Plotly provides interactive charts that allow users to:
+
+- Zoom into charts
+- Pan across visualizations
+- Hover over data points
+- Show additional information
+- Interact with different parts of a graph
+- Customize visualizations dynamically
 
 ---
 
@@ -56,6 +52,7 @@ The Plotly section contains practical notebooks covering interactive data visual
 
 - Python
 - Plotly
+- Plotly Express
 - Pandas
 - NumPy
 - Jupyter Notebook
@@ -66,14 +63,14 @@ The Plotly section contains practical notebooks covering interactive data visual
 
 The goal of this section is to develop practical skills in:
 
-1. Creating interactive visualizations
-2. Working with Plotly figures
-3. Visualizing Pandas DataFrames
-4. Customizing charts
-5. Understanding different chart types
-6. Exploring datasets interactively
-7. Creating clear and informative data visualizations
-8. Using interactive visualization for Exploratory Data Analysis
+1. Understanding Plotly fundamentals
+2. Creating interactive visualizations
+3. Working with Plotly Express
+4. Creating different types of charts
+5. Customizing interactive graphs
+6. Visualizing datasets
+7. Using interactive visualization for EDA
+8. Creating clear and informative dashboards and charts
 
 ---
 
@@ -84,4 +81,5 @@ Plotly/
 │
 ├── README.md
 │
-└── Plotly notebooks
+├── Plotly.ipynb
+└── Plotly-express.ipynb
