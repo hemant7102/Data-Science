@@ -183,7 +183,9 @@ Data-Science/
 ├── MLOps/
 │
 └── Projects/
+```
 
+---
 
 ## Technologies Used
 
