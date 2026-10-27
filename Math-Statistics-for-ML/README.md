@@ -1,40 +1,56 @@
 # Mathematics and Statistics for Machine Learning
 
-A practical, notebook-based learning repository covering the mathematical and statistical concepts required for Machine Learning, Data Science, and Data Analytics.
+A practical, notebook-based learning repository covering the mathematical and statistical concepts essential for **Machine Learning, Data Science, and Data Analytics**.
 
-This repository contains Jupyter notebooks with explanations, calculations, examples, and practice exercises to strengthen my understanding of probability, descriptive statistics, probability distributions, and statistical hypothesis testing.
+This repository documents my learning journey through descriptive statistics, probability distributions, statistical inference, hypothesis testing, and statistical tests using Python and Jupyter Notebook.
+
+It includes practical implementations, datasets, calculations, visualizations, and exercises to strengthen my understanding of statistical concepts and their applications in Machine Learning.
+
+---
 
 ## 📌 About This Repository
 
-Mathematics and statistics provide the foundation for understanding how Machine Learning algorithms work. This repository documents my learning journey through essential statistical concepts and their practical implementation using Python.
+Mathematics, probability, and statistics are fundamental to understanding data, evaluating assumptions, interpreting results, and developing reliable Machine Learning models.
 
-The primary objective is to build a strong foundation in statistics and probability before moving toward more advanced Machine Learning concepts.
+The purpose of this repository is to build a strong statistical foundation through a combination of theory and hands-on implementation.
+
+Each notebook focuses on a particular concept and provides an opportunity to explore statistical methods using Python.
 
 ## 🎯 Learning Objectives
 
 * Understand descriptive statistics and summarize datasets.
-* Learn probability distributions and their characteristics.
+* Explore probability distributions and their characteristics.
 * Understand Probability Mass Functions (PMF), Probability Density Functions (PDF), and Cumulative Distribution Functions (CDF).
-* Understand the Central Limit Theorem and its importance in statistical inference.
-* Explore non-Gaussian probability distributions.
+* Understand the Central Limit Theorem and sampling distributions.
+* Explore Gaussian and non-Gaussian probability distributions.
 * Learn hypothesis testing and statistical decision-making.
-* Understand p-values and their role in interpreting statistical tests.
-* Practice implementing statistical concepts using Python and Jupyter Notebook.
+* Understand p-values, significance levels, and statistical significance.
+* Perform Chi-Square tests and Analysis of Variance (ANOVA).
+* Apply statistical concepts to practical datasets.
+* Implement statistical calculations and visualizations using Python.
+
+---
 
 ## 🛠️ Technologies Used
 
-* **Python** — Statistical calculations and programming.
-* **Jupyter Notebook** — Interactive learning and experimentation.
-* **NumPy** — Numerical computations.
-* **Pandas** — Data manipulation and analysis.
-* **Matplotlib** — Data visualization.
-* **Seaborn** — Statistical data visualization.
-* **SciPy** — Statistical functions and hypothesis testing.
+| Technology       | Purpose                                      |
+| ---------------- | -------------------------------------------- |
+| Python           | Statistical calculations and programming     |
+| Jupyter Notebook | Interactive learning and experimentation     |
+| NumPy            | Numerical computations                       |
+| Pandas           | Data manipulation and analysis               |
+| Matplotlib       | Data visualization                           |
+| Seaborn          | Statistical data visualization               |
+| SciPy            | Statistical functions and hypothesis testing |
+
+---
 
 ## 📂 Repository Structure
 
 ```text
 Math-Statistics-for-ML/
+│
+├── README.md
 │
 ├── Descriptive-statistics.ipynb
 ├── Non-Gaussian-Probability-Distribution.ipynb
@@ -42,27 +58,37 @@ Math-Statistics-for-ML/
 ├── Central-Limit-Theorem.ipynb
 ├── Chi-Square-Test.ipynb
 ├── Hypothesis-Testing-Part-2-(P-Value).ipynb
+├── ANOVA-Test.ipynb
 ├── Pratices-Non-Gaussian.ipynb
 │
-└── README.md
+├── batsman_runs_ipl.csv
+├── bollywood.csv
+├── concrete_data.csv
+├── ds_salaries.csv
+├── movies.csv
+├── test.csv
+└── train.csv
 ```
+
+---
 
 ## 📚 Topics Covered
 
 ### 1. Descriptive Statistics
 
-Learn how to summarize, organize, and understand data using statistical measures.
+Learn how to summarize, organize, and understand datasets using statistical measures.
 
 **Key concepts:**
 
 * Mean, median, and mode
+* Measures of central tendency
 * Measures of dispersion
 * Variance and standard deviation
 * Quartiles and percentiles
 * Interquartile range (IQR)
 * Data distribution and outlier analysis
 
-**Notebook:** `Descriptive-statistics.ipynb`
+**Notebook:** [`Descriptive-statistics.ipynb`](./Descriptive-statistics.ipynb)
 
 ### 2. Probability Distributions
 
@@ -72,30 +98,30 @@ Explore probability distributions and understand how they describe the behavior 
 
 * Random variables
 * Probability distributions
-* Gaussian versus non-Gaussian distributions
-* Characteristics of non-Gaussian distributions
+* Gaussian and non-Gaussian distributions
+* Distribution shape and characteristics
 * Practical probability distribution examples
 
 **Notebooks:**
 
-* `Non-Gaussian-Probability-Distribution.ipynb`
-* `Pratices-Non-Gaussian.ipynb`
+* [`Non-Gaussian-Probability-Distribution.ipynb`](./Non-Gaussian-Probability-Distribution.ipynb)
+* [`Pratices-Non-Gaussian.ipynb`](./Pratices-Non-Gaussian.ipynb)
 
 ### 3. PMF, PDF, and CDF
 
-Understand the three important functions used to describe probability distributions.
+Understand the three fundamental functions used to describe probability distributions.
 
-| Concept | Description                                                                                                  |
-| ------- | ------------------------------------------------------------------------------------------------------------ |
-| PMF     | Gives the probability of each possible value of a discrete random variable.                                  |
-| PDF     | Describes probability density for a continuous random variable; probabilities are calculated over intervals. |
-| CDF     | Gives the probability that a random variable is less than or equal to a specified value.                     |
+| Concept | Description                                                                                                     |
+| ------- | --------------------------------------------------------------------------------------------------------------- |
+| PMF     | Gives the probability of each possible value of a discrete random variable.                                     |
+| PDF     | Describes the probability density of a continuous random variable. Probabilities are calculated over intervals. |
+| CDF     | Gives the probability that a random variable is less than or equal to a specified value.                        |
 
-**Notebook:** `PDF-PMF-CDF.ipynb`
+**Notebook:** [`PDF-PMF-CDF.ipynb`](./PDF-PMF-CDF.ipynb)
 
 ### 4. Central Limit Theorem
 
-Study why the sampling distribution of the sample mean approaches a normal distribution under suitable conditions as the sample size increases.
+Study how the sampling distribution of the sample mean approaches a normal distribution under suitable conditions as the sample size increases.
 
 **Key concepts:**
 
@@ -105,26 +131,27 @@ Study why the sampling distribution of the sample mean approaches a normal distr
 * Sample size and sampling variability
 * Importance of the Central Limit Theorem in statistical inference
 
-**Notebook:** `Central-Limit-Theorem.ipynb`
+**Notebook:** [`Central-Limit-Theorem.ipynb`](./Central-Limit-Theorem.ipynb)
 
 ### 5. Chi-Square Test
 
-Explore the chi-square test as a method for comparing observed categorical counts with expected counts or investigating relationships between categorical variables.
+Explore the Chi-Square test for analyzing categorical data and comparing observed frequencies with expected frequencies.
 
 **Key concepts:**
 
 * Observed and expected frequencies
 * Null and alternative hypotheses
-* Chi-square statistic
+* Chi-Square statistic
 * Degrees of freedom
 * P-value interpretation
-* Goodness-of-fit and independence tests
+* Goodness-of-fit tests
+* Tests of independence
 
-**Notebook:** `Chi-Square-Test.ipynb`
+**Notebook:** [`Chi-Square-Test.ipynb`](./Chi-Square-Test.ipynb)
 
 ### 6. Hypothesis Testing and P-Values
 
-Learn how statistical hypothesis testing helps evaluate claims using sample data.
+Learn how hypothesis testing uses sample data to evaluate statistical claims.
 
 **Key concepts:**
 
@@ -134,9 +161,49 @@ Learn how statistical hypothesis testing helps evaluate claims using sample data
 * P-values
 * Statistical significance
 * Type I and Type II errors
-* Interpreting statistical test results
+* Interpretation of statistical test results
 
-**Notebook:** `Hypothesis-Testing-Part-2-(P-Value).ipynb`
+**Notebook:** [`Hypothesis-Testing-Part-2-(P-Value).ipynb`](./Hypothesis-Testing-Part-2-%28P-Value%29.ipynb)
+
+### 7. Analysis of Variance (ANOVA)
+
+Explore Analysis of Variance (ANOVA), a statistical method used to test whether the means of multiple groups differ significantly.
+
+**Key concepts:**
+
+* Purpose of ANOVA
+* Null and alternative hypotheses
+* Between-group and within-group variation
+* F-statistic
+* P-value interpretation
+* Significance level
+* Interpretation of ANOVA results
+
+**Notebook:** [`ANOVA-Test.ipynb`](./ANOVA-Test.ipynb)
+
+*Note: A significant one-way ANOVA result indicates that at least one group mean differs; additional comparisons may be needed to identify which groups differ.*
+
+---
+
+## 🗃️ Datasets
+
+This repository includes datasets for practical statistical analysis and experimentation.
+
+| Dataset               | File                                             | Potential Applications                                      |
+| --------------------- | ------------------------------------------------ | ----------------------------------------------------------- |
+| IPL Batsman Runs      | [`batsman_runs_ipl.csv`](./batsman_runs_ipl.csv) | Cricket performance analysis and descriptive statistics     |
+| Bollywood             | [`bollywood.csv`](./bollywood.csv)               | Analysis of movie-related variables                         |
+| Concrete Data         | [`concrete_data.csv`](./concrete_data.csv)       | Descriptive analysis and exploration of concrete properties |
+| Data Science Salaries | [`ds_salaries.csv`](./ds_salaries.csv)           | Salary distribution and employment data analysis            |
+| Movies                | [`movies.csv`](./movies.csv)                     | Movie dataset exploration and statistical analysis          |
+| Test Dataset          | [`test.csv`](./test.csv)                         | Dataset-specific analysis and practice                      |
+| Training Dataset      | [`train.csv`](./train.csv)                       | Dataset-specific analysis and practice                      |
+
+The exact applications of each dataset depend on its columns, data quality, and the questions explored in the notebooks.
+
+**Dataset note:** The notebooks may use only a subset of these files. Check the corresponding notebook to determine which dataset it requires.
+
+---
 
 ## ⚙️ Getting Started
 
@@ -144,18 +211,19 @@ Follow these steps to explore the notebooks locally.
 
 ### Prerequisites
 
-Install Python and Jupyter Notebook. Familiarity with basic Python programming will be helpful.
+* Python
+* Jupyter Notebook
+* Basic knowledge of Python programming
 
-### 1. Clone the Repository
+### 1. Clone the Parent Repository
 
-Clone the parent Data Science repository and navigate to this project folder.
+Clone the parent Data Science repository and navigate to this folder.
 
 ```bash
-git clone <YOUR-GITHUB-REPOSITORY-URL>
-cd Data-Science/Math-Statistics-for-ML
+git clone <https://github.com/hemant7102/Data-Science.git>
+cd "Data Science/Math-Statistics-for-ML"
 ```
 
-Replace `<YOUR-GITHUB-REPOSITORY-URL>` with the actual URL of your GitHub repository. Adjust the folder name if your repository uses a different name.
 
 ### 2. Create a Virtual Environment (Optional)
 
@@ -181,24 +249,39 @@ python -m pip install numpy pandas matplotlib seaborn scipy jupyter
 jupyter notebook
 ```
 
-Open any notebook to explore its explanations, code, outputs, and exercises.
+Open a notebook to explore its explanations, code, outputs, and exercises.
+
+---
 
 ## 🚀 Why Statistics Matters in Machine Learning
 
 Statistics plays an important role throughout the Machine Learning workflow.
 
 * **Exploratory Data Analysis:** Understand data patterns, distributions, and outliers.
-* **Feature Engineering:** Transform and analyze features.
-* **Model Evaluation:** Interpret evaluation results and assess uncertainty.
+* **Feature Engineering:** Analyze and transform features.
+* **Model Evaluation:** Interpret results and assess uncertainty.
 * **Statistical Inference:** Draw conclusions from sample data.
 * **Hypothesis Testing:** Evaluate assumptions and compare outcomes.
 * **Probability:** Understand uncertainty and probabilistic predictions.
+* **Experimental Analysis:** Determine whether observed differences may reflect meaningful effects.
+
+---
 
 ## 📈 Learning Approach
 
-My approach is to learn each concept, implement it in Python, examine the results, and reinforce my understanding through practical examples and exercises.
+My learning approach focuses on understanding the theory, implementing statistical methods in Python, analyzing the results, and reinforcing the concepts through practical exercises.
 
-This repository will evolve as I explore additional topics in mathematics, probability, and statistics for Machine Learning.
+The process involves:
+
+1. Understanding the statistical concept.
+2. Implementing the calculations using Python.
+3. Exploring datasets and visualizing results.
+4. Interpreting the outcomes.
+5. Practicing with additional examples.
+
+This repository will continue to evolve as I explore more advanced topics in probability, statistics, and Machine Learning.
+
+---
 
 ## 🔮 Future Learning Goals
 
@@ -207,12 +290,17 @@ Topics I plan to explore include:
 * Correlation and covariance
 * Probability rules and Bayes' theorem
 * Common probability distributions
-* Sampling techniques and confidence intervals
+* Sampling techniques
+* Confidence intervals
 * Z-tests and t-tests
-* ANOVA
+* One-way and two-way ANOVA
+* Post-hoc statistical tests
+* Regression analysis
 * Linear algebra for Machine Learning
 * Calculus and optimization
 * Statistical foundations of Machine Learning algorithms
+
+---
 
 ## 👨‍💻 Author
 
@@ -222,4 +310,4 @@ Aspiring Data Science and Data Analytics professional interested in Python, stat
 
 ---
 
-⭐ If you find this repository useful, feel free to explore the notebooks and learn along with me.
+⭐ If you find this repository useful, explore the notebooks and learn along with me.
