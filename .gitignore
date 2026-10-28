@@ -1,12 +1,19 @@
+# Python environments
 .venv/
 venv/
 env/
 
+# Python cache
 __pycache__/
 *.py[cod]
 
+# Jupyter temporary files
 .ipynb_checkpoints/
 
+# Environment variables and secrets
 .env
 
+# Editor and OS files
 .vscode/
+.DS_Store
+Thumbs.db
