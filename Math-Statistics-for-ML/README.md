@@ -2,9 +2,9 @@
 
 A practical, notebook-based learning repository covering the mathematical and statistical concepts essential for **Machine Learning, Data Science, and Data Analytics**.
 
-This repository documents my learning journey through descriptive statistics, probability distributions, statistical inference, hypothesis testing, linear algebra, and mathematical transformations using Python and Jupyter Notebook.
+This repository documents my learning journey through descriptive statistics, probability distributions, statistical inference, hypothesis testing, linear algebra, mathematical transformations, and real-world statistical case studies using Python and Jupyter Notebook.
 
-It contains practical implementations, datasets, calculations, visualizations, and exercises to strengthen my understanding of mathematical and statistical concepts and their applications in Machine Learning.
+It includes practical implementations, datasets, calculations, visualizations, and exercises to strengthen my understanding of mathematical and statistical concepts and their applications in Machine Learning.
 
 ---
 
@@ -26,10 +26,11 @@ Each notebook focuses on specific concepts and provides opportunities to explore
 * Learn hypothesis testing and statistical decision-making.
 * Understand p-values, significance levels, and statistical significance.
 * Perform Chi-Square tests and Analysis of Variance (ANOVA).
-* Understand normal distributions and their statistical properties.
+* Understand normal distributions and their properties.
 * Learn linear algebra fundamentals, including vectors and tensors.
 * Explore mathematical and statistical transformations.
-* Apply statistical concepts to practical datasets.
+* Apply statistical concepts to real-world datasets.
+* Conduct practical statistical case studies.
 * Implement mathematical and statistical concepts using Python.
 
 ---
@@ -66,6 +67,10 @@ Math-Statistics-for-ML/
 ├── Linear-Algebra-Tensor-Vectors.ipynb
 ├── Normal-Distribution.ipynb
 ├── Transformations.ipynb
+│
+├── Case-Study-IPL-runs.ipynb
+├── Case-Study-using-CLT-titanic.ipynb
+├── case-study-on-salary-dataset.ipynb
 │
 ├── batsman_runs_ipl.csv
 ├── bollywood.csv
@@ -123,7 +128,7 @@ Study the normal distribution and its importance in probability, statistics, and
 * Mean and standard deviation
 * Symmetry and distribution shape
 * Probability calculations
-* Relationship between normal distributions and statistical inference
+* Applications in statistical inference
 
 **Notebook:** [`Normal-Distribution.ipynb`](./Normal-Distribution.ipynb)
 
@@ -217,11 +222,9 @@ Explore linear algebra concepts that provide a mathematical foundation for numer
 
 **Notebook:** [`Linear-Algebra-Tensor-Vectors.ipynb`](./Linear-Algebra-Tensor-Vectors.ipynb)
 
-*The specific concepts covered depend on the examples and exercises implemented in the notebook.*
-
 ### 10. Mathematical and Statistical Transformations
 
-Explore transformations used to modify data representations and investigate their effects on data.
+Explore transformations that modify data representations and help prepare numerical data for analysis.
 
 **Potential applications:**
 
@@ -233,6 +236,56 @@ Explore transformations used to modify data representations and investigate thei
 **Notebook:** [`Transformations.ipynb`](./Transformations.ipynb)
 
 *Refer to the notebook for the exact transformations and methods implemented.*
+
+---
+
+## 🔬 Practical Statistical Case Studies
+
+This section contains practical case studies that connect statistical concepts with real-world datasets.
+
+### 1. IPL Runs Analysis
+
+Explore cricket batting performance using IPL runs data.
+
+**Notebook:** [`Case-Study-IPL-runs.ipynb`](./Case-Study-IPL-runs.ipynb)
+
+**Learning objectives:**
+
+* Explore and understand cricket performance data.
+* Apply descriptive statistical techniques.
+* Analyze runs and batting performance.
+* Identify patterns in the dataset.
+* Interpret statistical findings.
+
+### 2. Central Limit Theorem — Titanic Dataset
+
+Explore the Central Limit Theorem using the Titanic dataset.
+
+**Notebook:** [`Case-Study-using-CLT-titanic.ipynb`](./Case-Study-using-CLT-titanic.ipynb)
+
+**Learning objectives:**
+
+* Explore the Titanic dataset.
+* Understand population and sample concepts.
+* Investigate sampling distributions.
+* Explore sample means and sample size.
+* Demonstrate the Central Limit Theorem through practical analysis.
+
+### 3. Salary Dataset Analysis
+
+Explore salary data through practical statistical analysis.
+
+**Notebook:** [`case-study-on-salary-dataset.ipynb`](./case-study-on-salary-dataset.ipynb)
+
+**Learning objectives:**
+
+* Explore salary-related variables.
+* Calculate descriptive statistics.
+* Understand distributions and variability.
+* Identify patterns in numerical data.
+* Visualize and interpret statistical results.
+
+*Note: These learning objectives describe the intended analytical scope based on the notebook names. Refer to the actual notebooks for the specific analyses, methods, and conclusions implemented.*
 
 ---
 
@@ -250,9 +303,9 @@ This repository includes datasets for practical statistical analysis, experiment
 | Test Dataset          | [`test.csv`](./test.csv)                         | Dataset-specific analysis and practice                  |
 | Training Dataset      | [`train.csv`](./train.csv)                       | Dataset-specific analysis and practice                  |
 
-The exact applications of each dataset depend on its columns and the questions explored in the notebooks.
+The exact applications of each dataset depend on its columns and the analyses performed in the notebooks.
 
-**Note:** Not every notebook necessarily uses these datasets. Check the relevant notebook to identify its required input files.
+**Dataset note:** Not every notebook necessarily uses these datasets. Check the relevant notebook to identify its required input files.
 
 ---
 
@@ -300,6 +353,8 @@ jupyter notebook
 ```
 
 Open a notebook to explore its explanations, code, outputs, and exercises.
+
+*Note: Individual notebooks may require additional dependencies or datasets. Install any additional dependencies required by the notebook you intend to run.*
 
 ---
 
