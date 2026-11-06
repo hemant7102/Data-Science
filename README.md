@@ -1,8 +1,8 @@
 # 📊 Data Science & Machine Learning
 
-A hands-on repository documenting my learning journey in **Data Science, Data Analytics, Statistics, Python, Data Visualization, and Machine Learning**.
+A hands-on repository documenting my learning journey in **Data Science, Data Analytics, Statistics, Python, Data Visualization, Feature Engineering, and Machine Learning**.
 
-This repository contains practical Jupyter notebooks, datasets, statistical exercises, exploratory data analysis, visualization techniques, and data analysis projects. Each module focuses on building practical skills through coding, experimentation, and working with datasets.
+This repository contains practical Jupyter notebooks, datasets, statistical exercises, exploratory data analysis, feature preprocessing techniques, visualization methods, and data analysis projects. Each module focuses on building practical skills through coding, experimentation, and working with datasets.
 
 My goal is to develop a strong foundation in data analysis and statistics, progress toward Machine Learning and Deep Learning, and eventually build reproducible, production-ready data science applications.
 
@@ -10,25 +10,26 @@ My goal is to develop a strong foundation in data analysis and statistics, progr
 
 ## 📚 Table of Contents
 
-* [About the Repository](#-about-the-repository)
-* [Learning Roadmap](#-learning-roadmap)
-* [Repository Structure](#-repository-structure)
-* [Learning Modules](#-learning-modules)
-
-  * [NumPy](#1-numpy)
-  * [Pandas](#2-pandas)
-  * [Matplotlib](#3-matplotlib)
-  * [Seaborn](#4-seaborn)
-  * [Plotly](#5-plotly)
-  * [Mathematics and Statistics for ML](#6-mathematics-and-statistics-for-machine-learning)
-  * [Exploratory Data Analysis](#7-exploratory-data-analysis-eda)
-  * [Data Analysis Projects](#8-data-analysis-projects)
-* [Technologies Used](#-technologies-used)
-* [Getting Started](#-getting-started)
-* [Learning Objectives](#-learning-objectives)
-* [Current Progress](#-current-progress)
-* [Future Improvements](#-future-improvements)
-* [Connect With Me](#-connect-with-me)
+- [About the Repository](#-about-the-repository)
+- [Learning Roadmap](#-learning-roadmap)
+- [Repository Structure](#-repository-structure)
+- [Learning Modules](#-learning-modules)
+  - [1. NumPy](#1-numpy)
+  - [2. Pandas](#2-pandas)
+  - [3. Matplotlib](#3-matplotlib)
+  - [4. Seaborn](#4-seaborn)
+  - [5. Plotly](#5-plotly)
+  - [6. Mathematics and Statistics for ML](#6-mathematics-and-statistics-for-machine-learning)
+  - [7. Exploratory Data Analysis](#7-exploratory-data-analysis-eda)
+  - [8. Feature Engineering](#8-feature-engineering)
+  - [9. Feature Scaling](#9-feature-scaling)
+  - [10. Data Analysis Projects](#10-data-analysis-projects)
+- [Technologies Used](#-technologies-used)
+- [Getting Started](#-getting-started)
+- [Learning Objectives](#-learning-objectives)
+- [Current Progress](#-current-progress)
+- [Future Improvements](#-future-improvements)
+- [Connect With Me](#-connect-with-me)
 
 ---
 
@@ -36,19 +37,21 @@ My goal is to develop a strong foundation in data analysis and statistics, progr
 
 This repository serves as a practical learning portfolio covering the essential concepts and tools used in Data Science and Data Analytics.
 
-The content is organized into topic-specific directories so that individual subjects can be explored independently.
+The content is organized into topic-specific directories so that individual subjects can be explored independently. Most topics include a dedicated `README.md` describing the notebooks, concepts, datasets, and instructions for getting started.
 
 ### What you will find here
 
-* Python-based numerical computing
-* Data manipulation and analysis using Pandas
-* Data cleaning and preprocessing exercises
-* Exploratory Data Analysis (EDA)
-* Statistical concepts and probability distributions
-* Data visualization using Matplotlib, Seaborn, and Plotly
-* Analysis of datasets related to IPL, movies, salaries, cars, COVID-19, and other subjects
-* Jupyter notebooks containing practical exercises and case studies
-* Data analysis applications and dashboards
+- Python-based numerical computing
+- Data manipulation and analysis using Pandas
+- Data cleaning and preprocessing exercises
+- Exploratory Data Analysis (EDA)
+- Statistical concepts and probability distributions
+- Data visualization using Matplotlib, Seaborn, and Plotly
+- Feature engineering and categorical-variable encoding
+- Feature transformation and scaling techniques
+- Analysis of datasets related to IPL, movies, salaries, cars, COVID-19, and other subjects
+- Jupyter notebooks containing practical exercises and case studies
+- Data analysis applications and dashboards
 
 The repository is continuously evolving as I learn new concepts and implement additional projects.
 
@@ -58,29 +61,31 @@ The repository is continuously evolving as I learn new concepts and implement ad
 
 My learning roadmap is organized into the following areas.
 
-| Stage | Area                      | Focus                                                                    |
-| ----- | ------------------------- | ------------------------------------------------------------------------ |
-| 1     | Foundations               | Python, mathematics, probability, and statistics                         |
-| 2     | Numerical Computing       | NumPy arrays, indexing, vectorization, and mathematical operations       |
-| 3     | Data Manipulation         | Pandas, filtering, grouping, merging, and data cleaning                  |
-| 4     | Exploratory Data Analysis | Univariate, bivariate, and multivariate analysis                         |
-| 5     | Data Visualization        | Matplotlib, Seaborn, Plotly, and dashboard development                   |
-| 6     | Statistical Analysis      | Probability distributions, hypothesis testing, and statistical inference |
-| 7     | Machine Learning          | Regression, classification, clustering, and model evaluation             |
-| 8     | Deep Learning             | Neural networks and deep learning frameworks                             |
-| 9     | MLOps                     | Experiment tracking, data versioning, Docker, APIs, and deployment       |
-| 10    | End-to-End Projects       | Applying data science techniques to practical problems                   |
+| Stage | Area | Focus |
+|---|---|---|
+| 1 | Foundations | Python, mathematics, probability, and statistics |
+| 2 | Numerical Computing | NumPy arrays, indexing, vectorization, and mathematical operations |
+| 3 | Data Manipulation | Pandas, filtering, grouping, merging, and data cleaning |
+| 4 | Exploratory Data Analysis | Univariate, bivariate, and multivariate analysis |
+| 5 | Data Visualization | Matplotlib, Seaborn, Plotly, and dashboard development |
+| 6 | Statistical Analysis | Probability distributions, hypothesis testing, and statistical inference |
+| 7 | Feature Engineering | Encoding, binning, transformations, and Scikit-learn preprocessing tools |
+| 8 | Feature Scaling | Standardization, normalization, robust scaling, and other scaling methods |
+| 9 | Machine Learning | Regression, classification, clustering, and model evaluation |
+| 10 | Deep Learning | Neural networks and deep learning frameworks |
+| 11 | MLOps | Experiment tracking, data versioning, Docker, APIs, and deployment |
+| 12 | End-to-End Projects | Applying data science techniques to practical problems |
 
-**Note:** This roadmap describes my broader learning goals. The modules listed below represent the folders currently present in the repository.
+**Note:** This roadmap describes my broader learning goals. The modules listed below represent the learning materials and projects currently documented in this repository.
 
 ---
 
 ## 📂 Repository Structure
 
-The following structure reflects the main project directories and files shown in the current terminal listing. The virtual environment and its installed packages are intentionally excluded from this overview.
+The following is a high-level view of the repository. Some supporting datasets are grouped or described rather than listed individually to keep the structure readable. Refer to each directory for its complete contents.
 
 ```text
-Data Science/
+Data-Science/
 │
 ├── README.md
 ├── .gitignore
@@ -149,6 +154,22 @@ Data Science/
 │   ├── train.csv
 │   └── test.csv
 │
+├── Feature Engineering/
+│   ├── README.md
+│   ├── SKlearn-Deep-Dive.ipynb
+│   ├── SKlearn-Columntransformer-Pipeline.ipynb
+│   ├── Encoding-Categoricl-Variables.ipynb
+│   ├── Binning.ipynb
+│   ├── Num-To-Cateorical-Using-Binning.ipynb
+│   ├── Basic-Transformation.ipynb
+│   ├── Feature-Transformer.ipynb
+│   └── Supporting CSV / serialized pipeline files
+│
+├── Feature Scaling/
+│   ├── README.md
+│   ├── Scaling-Techin.ipynb
+│   └── Standardization.ipynb
+│
 └── Data Analysis Project/
     └── covid-19-Dashboard/
         ├── app.py
@@ -158,7 +179,7 @@ Data Science/
         └── IndividualDetails.csv
 ```
 
-**Repository structure note:** Some supporting datasets and individual notebooks are grouped in the tree for readability. Refer to each directory for its complete contents. The structure may change as new material is added.
+**Repository structure note:** This is a documentation-oriented overview, not a guarantee that every file is present in every checkout. Notebook names and supporting files may change as the repository evolves. Check the relevant directory for its latest contents.
 
 ---
 
@@ -172,13 +193,13 @@ NumPy provides the foundation for numerical computing in Python.
 
 Topics explored include:
 
-* NumPy arrays and multidimensional arrays
-* Array indexing and slicing
-* Array operations and mathematical computations
-* Vectorized operations
-* Advanced NumPy techniques
-* Three-dimensional arrays and graph-related exercises
-* NumPy tricks and practice exercises
+- NumPy arrays and multidimensional arrays
+- Array indexing and slicing
+- Array operations and mathematical computations
+- Vectorized operations
+- Advanced NumPy techniques
+- Three-dimensional arrays and graph-related exercises
+- NumPy tricks and practice exercises
 
 **Documentation:** [`Numpy/README.md`](./Numpy/README.md)
 
@@ -190,16 +211,16 @@ Pandas is used for data manipulation, cleaning, transformation, and analysis.
 
 Topics explored include:
 
-* Series and DataFrames
-* Data selection and filtering
-* GroupBy operations and aggregation
-* Merging, joining, and concatenation
-* MultiIndex
-* Date and time operations
-* Time series analysis
-* IPL data analysis
-* Text dataset case studies
-* Working with CSV datasets
+- Series and DataFrames
+- Data selection and filtering
+- GroupBy operations and aggregation
+- Merging, joining, and concatenation
+- MultiIndex
+- Date and time operations
+- Time series analysis
+- IPL data analysis
+- Text dataset case studies
+- Working with CSV datasets
 
 **Documentation:** [`Pandas/README.md`](./Pandas/README.md)
 
@@ -211,12 +232,12 @@ Matplotlib is used to create static visualizations and communicate insights from
 
 Topics explored include:
 
-* Basic plotting
-* Advanced plotting techniques
-* Chart customization
-* Labels, titles, legends, and axes
-* Graph interpretation
-* Visualization using supporting datasets
+- Basic plotting
+- Advanced plotting techniques
+- Chart customization
+- Labels, titles, legends, and axes
+- Graph interpretation
+- Visualization using supporting datasets
 
 **Documentation:** [`Matplotlib/README.md`](./Matplotlib/README.md)
 
@@ -228,12 +249,12 @@ Seaborn provides statistical visualization tools built on top of Matplotlib.
 
 Topics explored include:
 
-* Statistical plots
-* Distribution visualization
-* Relationship analysis
-* Categorical visualization
-* Correlation analysis
-* Visual exploration of datasets
+- Statistical plots
+- Distribution visualization
+- Relationship analysis
+- Categorical visualization
+- Correlation analysis
+- Visual exploration of datasets
 
 **Documentation:** [`Seaborn/README.md`](./Seaborn/README.md)
 
@@ -245,10 +266,10 @@ Plotly is used to create interactive visualizations for exploring and presenting
 
 Topics explored include:
 
-* Plotly fundamentals
-* Plotly Express
-* Interactive charts
-* Data visualization and exploration
+- Plotly fundamentals
+- Plotly Express
+- Interactive charts
+- Data visualization and exploration
 
 **Documentation:** [`Plotly/README.md`](./Plotly/README.md)
 
@@ -260,20 +281,20 @@ This module covers mathematical and statistical foundations that support data an
 
 Topics include:
 
-* Descriptive statistics
-* Normal and non-Gaussian probability distributions
-* Probability Mass Function (PMF)
-* Probability Density Function (PDF)
-* Cumulative Distribution Function (CDF)
-* Central Limit Theorem (CLT)
-* Hypothesis testing and P-values
-* Chi-Square tests
-* Analysis of Variance (ANOVA)
-* Linear algebra, tensors, and vectors
-* Data transformations
-* Practical statistical case studies
+- Descriptive statistics
+- Normal and non-Gaussian probability distributions
+- Probability Mass Function (PMF)
+- Probability Density Function (PDF)
+- Cumulative Distribution Function (CDF)
+- Central Limit Theorem (CLT)
+- Hypothesis testing and P-values
+- Chi-Square tests
+- Analysis of Variance (ANOVA)
+- Linear algebra, tensors, and vectors
+- Data transformations
+- Practical statistical case studies
 
-The module also contains datasets used for exercises and case studies involving IPL runs, salaries, Titanic data, movies, and other subjects.
+The module also contains datasets used for exercises and case studies involving IPL runs, salaries, Titanic data, and other subjects.
 
 **Documentation:** [`Math-Statistics-for-ML/README.md`](./Math-Statistics-for-ML/README.md)
 
@@ -285,19 +306,63 @@ This module contains practical exploratory analysis notebooks.
 
 Current materials include:
 
-* Car dataset analysis
-* Titanic dataset exploration
-* Supporting CSV and Excel datasets
+- Car dataset analysis
+- Titanic dataset exploration
+- Supporting CSV and Excel datasets
 
-The focus is on understanding dataset structure, examining variables, identifying patterns, exploring distributions, and visualizing relationships.
+The focus is on understanding dataset structure, examining variables, identifying patterns, exploring distributions, detecting potential data-quality issues, and visualizing relationships.
 
 **Documentation:** [`EDA/README.md`](./EDA/README.md)
 
-### 8. Data Analysis Projects
+### 8. Feature Engineering
+
+📁 Directory: [`Feature Engineering/`](./Feature%20Engineering/)
+
+This module focuses on preparing raw data and transforming input variables into features that can be used effectively by Machine Learning algorithms.
+
+Topics explored include:
+
+- Scikit-learn preprocessing tools
+- Encoding categorical variables
+- Binning numerical variables
+- Converting numerical variables into categorical features using binning
+- Basic feature transformations
+- Custom feature transformers
+- ColumnTransformer
+- Scikit-learn pipelines
+- Building and understanding reusable preprocessing workflows
+
+The notebooks include practical exercises and supporting datasets such as car and customer data. A serialized pipeline file may also be included for experimentation.
+
+**Documentation:** [`Feature Engineering/README.md`](./Feature%20Engineering/README.md)
+
+### 9. Feature Scaling
+
+📁 Directory: [`Feature Scaling/`](./Feature%20Scaling/)
+
+This module explores feature-scaling techniques used to bring numerical features onto comparable scales. Scaling can be important for algorithms that are sensitive to feature magnitude.
+
+The current notebooks cover:
+
+- Standardization using `StandardScaler`
+- Min-Max scaling using `MinMaxScaler`
+- Robust scaling using `RobustScaler`
+- Maximum absolute scaling using `MaxAbsScaler`
+- L1 and L2 normalization
+- Comparing feature distributions before and after scaling
+- Exploring the effect of outliers on scaling methods
+- Comparing model performance with and without scaling
+- Applying scaling within a train-test workflow
+
+The notebooks use practical datasets, including Social Network Ads and Wine data, and demonstrate additional scaling experiments with other datasets.
+
+**Documentation:** [`Feature Scaling/README.md`](./Feature%20Scaling/README.md)
+
+### 10. Data Analysis Projects
 
 📁 Directory: [`Data Analysis Project/`](./Data%20Analysis%20Project/)
 
-This directory contains data analysis project work.
+This directory contains practical data analysis project work.
 
 #### COVID-19 Dashboard
 
@@ -307,11 +372,11 @@ The project contains a Python application, a Jupyter notebook, and supporting CO
 
 Files include:
 
-* `app.py` — dashboard application
-* `sample-code.ipynb` — notebook-based exploration
-* `covid_19_india.csv` — COVID-19 dataset
-* `AgeGroupDetails.csv` — age-group data
-* `IndividualDetails.csv` — individual-level dataset
+- `app.py` — dashboard application
+- `sample-code.ipynb` — notebook-based exploration
+- `covid_19_india.csv` — COVID-19 dataset
+- `AgeGroupDetails.csv` — age-group data
+- `IndividualDetails.csv` — individual-level dataset
 
 Open the project directory to inspect the implementation and its data requirements.
 
@@ -319,18 +384,20 @@ Open the project directory to inspect the implementation and its data requiremen
 
 ## 🛠️ Technologies Used
 
-| Technology       | Purpose                                      |
-| ---------------- | -------------------------------------------- |
-| Python           | Core programming language                    |
-| NumPy            | Numerical computing                          |
-| Pandas           | Data manipulation and analysis               |
-| Matplotlib       | Static data visualization                    |
-| Seaborn          | Statistical visualization                    |
-| Plotly           | Interactive data visualization               |
-| Jupyter Notebook | Interactive coding and experimentation       |
-| CSV / Excel      | Dataset storage and analysis                 |
-| Git              | Version control                              |
-| GitHub           | Repository hosting and project documentation |
+| Technology | Purpose |
+|---|---|
+| Python | Core programming language |
+| NumPy | Numerical computing |
+| Pandas | Data manipulation and analysis |
+| Matplotlib | Static data visualization |
+| Seaborn | Statistical visualization |
+| Plotly | Interactive data visualization |
+| SciPy | Scientific and statistical computing |
+| Scikit-learn | Data preprocessing and Machine Learning tools |
+| Jupyter Notebook | Interactive coding and experimentation |
+| CSV / Excel | Dataset storage and analysis |
+| Git | Version control |
+| GitHub | Repository hosting and project documentation |
 
 Additional libraries may be required for individual notebooks or applications.
 
@@ -344,10 +411,10 @@ Follow these steps to explore the repository locally.
 
 Install the following tools:
 
-* Python
-* Git
-* Jupyter Notebook
-* Visual Studio Code or another Python-compatible editor
+- Python
+- Git
+- Jupyter Notebook
+- Visual Studio Code or another Python-compatible editor
 
 ### 1. Clone the Repository
 
@@ -376,7 +443,7 @@ If PowerShell blocks script execution, consult your Python environment setup ins
 
 ```bash
 python -m pip install --upgrade pip
-python -m pip install numpy pandas matplotlib seaborn plotly scipy jupyter openpyxl
+python -m pip install numpy pandas matplotlib seaborn plotly scipy scikit-learn jupyter openpyxl
 ```
 
 Individual projects may require additional dependencies. Install those separately according to the relevant notebook or project documentation.
@@ -387,17 +454,19 @@ Individual projects may require additional dependencies. Install those separatel
 jupyter notebook
 ```
 
-Alternatively, open the repository in Visual Studio Code and select a notebook.
+Alternatively, open the repository in Visual Studio Code and select a notebook kernel that uses the virtual environment.
 
 ### 6. Start Exploring
 
-Choose a module based on your learning goals:
+A suggested learning order:
 
-* Start with `Numpy/` for numerical computing.
-* Continue with `Pandas/` for data manipulation.
-* Explore `Matplotlib/`, `Seaborn/`, and `Plotly/` for visualization.
-* Study `Math-Statistics-for-ML/` for statistical foundations.
-* Explore `EDA/` and `Data Analysis Project/` for practical analysis.
+1. Start with `Numpy/` for numerical computing.
+2. Continue with `Pandas/` for data manipulation.
+3. Explore `Matplotlib/`, `Seaborn/`, and `Plotly/` for visualization.
+4. Study `Math-Statistics-for-ML/` for statistical foundations.
+5. Explore `EDA/` to practice understanding datasets.
+6. Study `Feature Engineering/` and `Feature Scaling/` to learn preprocessing workflows.
+7. Explore `Data Analysis Project/` for practical application work.
 
 ---
 
@@ -411,10 +480,12 @@ Through this repository, I aim to:
 4. Develop effective data visualization skills.
 5. Understand probability, statistics, and statistical inference.
 6. Conduct structured Exploratory Data Analysis.
-7. Analyze real-world datasets and identify meaningful patterns.
-8. Build practical data analysis projects.
-9. Progress toward Machine Learning and Deep Learning.
-10. Develop reproducible workflows and deploy data-driven applications.
+7. Apply feature engineering and preprocessing techniques.
+8. Understand when and how to scale numerical features.
+9. Analyze real-world datasets and identify meaningful patterns.
+10. Build practical data analysis projects.
+11. Progress toward Machine Learning and Deep Learning.
+12. Develop reproducible workflows and deploy data-driven applications.
 
 ---
 
@@ -422,21 +493,23 @@ Through this repository, I aim to:
 
 The repository contains practical learning materials in the following areas.
 
-| Area                       | Repository status                                |
-| -------------------------- | ------------------------------------------------ |
-| NumPy                      | Learning materials available                     |
-| Pandas                     | Learning materials and datasets available        |
-| Matplotlib                 | Basic and advanced plotting notebooks available  |
-| Seaborn                    | Visualization notebooks available                |
-| Plotly                     | Plotly and Plotly Express notebooks available    |
+| Area | Repository status |
+|---|---|
+| NumPy | Learning materials and practice notebooks available |
+| Pandas | Learning materials and datasets available |
+| Matplotlib | Basic and advanced plotting notebooks available |
+| Seaborn | Visualization notebooks available |
+| Plotly | Plotly and Plotly Express notebooks available |
 | Mathematics and Statistics | Statistical notebooks and case studies available |
-| Exploratory Data Analysis  | Car and Titanic analysis materials available     |
-| Data Analysis Projects     | COVID-19 dashboard project available             |
-| Machine Learning           | Part of the broader learning roadmap             |
-| Deep Learning              | Part of the broader learning roadmap             |
-| MLOps                      | Part of the broader learning roadmap             |
+| Exploratory Data Analysis | Car and Titanic analysis materials available |
+| Feature Engineering | Encoding, binning, transformations, and pipeline notebooks available |
+| Feature Scaling | Standardization, normalization, and alternative scaling notebooks available |
+| Data Analysis Projects | COVID-19 dashboard project available |
+| Machine Learning | Part of the broader learning roadmap |
+| Deep Learning | Part of the broader learning roadmap |
+| MLOps | Part of the broader learning roadmap |
 
-The status of each area reflects the presence of learning materials, not necessarily mastery or completion of every topic.
+The status of each area reflects the presence of learning materials, not necessarily mastery or completion of every topic. Some notebooks may require dataset paths, package versions, or external data sources to be configured before they run successfully.
 
 ---
 
@@ -444,17 +517,20 @@ The status of each area reflects the presence of learning materials, not necessa
 
 Planned improvements include:
 
-* Add more practical exercises and real-world datasets.
-* Improve notebook explanations and documentation.
-* Expand SQL and database analysis exercises.
-* Add more comprehensive EDA case studies.
-* Develop dedicated Machine Learning modules.
-* Implement regression, classification, clustering, and ensemble methods.
-* Explore Deep Learning frameworks and neural networks.
-* Expand experiment tracking and data versioning with MLOps tools.
-* Build more end-to-end data science projects.
-* Improve project documentation and reproducibility.
-* Keep the repository structure and learning progress updated.
+- Add more practical exercises and real-world datasets.
+- Improve notebook explanations and documentation.
+- Expand SQL and database analysis exercises.
+- Add more comprehensive EDA case studies.
+- Expand feature engineering and preprocessing examples.
+- Add practical feature selection techniques.
+- Develop dedicated Machine Learning modules.
+- Implement regression, classification, clustering, and ensemble methods.
+- Explore model evaluation, validation, and hyperparameter tuning.
+- Explore Deep Learning frameworks and neural networks.
+- Expand experiment tracking and data versioning with MLOps tools.
+- Build more end-to-end data science projects.
+- Improve project documentation and reproducibility.
+- Keep the repository structure and learning progress updated.
 
 ---
 
@@ -466,11 +542,12 @@ Aspiring Data Science and Data Analytics Professional
 
 Interested in:
 
-* Python and data analysis
-* Statistics and Machine Learning
-* Data visualization and dashboards
-* Practical data science projects
-* Building data-driven applications
+- Python and data analysis
+- Statistics and Machine Learning
+- Feature engineering and data preprocessing
+- Data visualization and dashboards
+- Practical data science projects
+- Building data-driven applications
 
 GitHub: [hemant7102](https://github.com/hemant7102)
 
