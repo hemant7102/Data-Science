@@ -1,8 +1,8 @@
 # Feature Engineering with Scikit-learn
 
-This folder contains hands-on notebooks exploring **feature engineering and preprocessing with Scikit-learn**. The work covers individual preprocessing techniques as well as combining them into reusable machine-learning workflows using `ColumnTransformer` and `Pipeline`.
+This folder contains hands-on notebooks covering feature engineering and preprocessing with **Python and Scikit-learn**. The material explores categorical encoding, numerical binning (discretization), custom estimators and transformers, and reusable preprocessing workflows built with `ColumnTransformer` and `Pipeline`.
 
-The examples use car and customer/review data, along with Scikit-learn's built-in and synthetic datasets.
+The examples use car, customer, and Titanic data, as well as generated datasets and datasets loaded within the notebooks.
 
 ---
 
@@ -14,14 +14,23 @@ Feature Engineering/
 ├── README.md
 ├── cars.csv
 ├── customer.csv
+├── train.csv
 ├── pipe.pkl
+│
 ├── SKlearn-Deep-Dive.ipynb
-└── SKlearn-Columntransformer-Pipeline.ipynb
+├── SKlearn-Columntransformer-Pipeline.ipynb
+├── Encoding-Categoricl-Variables.ipynb
+├── Binning.ipynb
+└── Num-To-Cateorical-Using-Binning.ipynb
 ```
 
-## 📘 Notebooks
+> Keep the notebook filename `Encoding-Categoricl-Variables.ipynb` exactly as it exists in the repository (including its current spelling).
 
-### 1. `SKlearn-Deep-Dive.ipynb`
+---
+
+# 📘 Notebooks
+
+## 1. `SKlearn-Deep-Dive.ipynb`
 
 Explores Scikit-learn's estimator and transformer APIs, including:
 
@@ -29,14 +38,14 @@ Explores Scikit-learn's estimator and transformer APIs, including:
 - **Scoring** — implementing a custom `score()` method and evaluating with cross-validation.
 - **Transformers and Pipelines** — combining preprocessing and model steps.
 - **FunctionTransformer** — wrapping a Python function as a transformer.
-- **Custom Transformers** — building a transformer with `BaseEstimator` and `TransformerMixin`; the notebook demonstrates a median/IQR-based scaler.
+- **Custom Transformers** — building transformers with `BaseEstimator` and `TransformerMixin`; the notebook demonstrates a median/IQR-based scaler.
 - **ColumnTransformer** — applying different transformations to selected columns.
 - **FeatureUnion** — combining outputs from multiple feature transformations.
 - **Combined preprocessing workflow** — joining imputation, encoding, text processing, feature extraction/selection, and a model in a pipeline.
 
-### 2. `SKlearn-Columntransformer-Pipeline.ipynb`
+## 2. `SKlearn-Columntransformer-Pipeline.ipynb`
 
-Demonstrates manual preprocessing first, then a more maintainable Scikit-learn approach.
+Demonstrates manual preprocessing and then a more maintainable Scikit-learn workflow.
 
 Topics include:
 
@@ -54,17 +63,74 @@ Topics include:
 12. Hyperparameter tuning
 13. Exporting the fitted pipeline
 
+## 3. `Encoding-Categoricl-Variables.ipynb`
+
+Covers techniques for converting categorical variables into numerical representations.
+
+Topics include:
+
+- **Ordinal Encoding** — encoding categories with an explicit order; also explores unknown and infrequent categories and missing-value handling.
+- **Label Encoding** — encoding target labels.
+- **One-Hot Encoding** — creating binary indicator columns for input categories.
+- **One-Hot Encoder options** — dropping a category, handling unknown categories, and controlling infrequent or maximum categories.
+- **Label Binarizer** — converting labels into binary representations.
+- **MultiLabelBinarizer** — representing multiple labels.
+- **Count / Frequency Encoding** — representing categories using their counts or frequencies.
+- **ColumnTransformer integration** — applying encoding and imputation to selected columns.
+
+The notebook uses `customer.csv` and `cars.csv`, and also creates example data for some encoding demonstrations.
+
+## 4. `Binning.ipynb`
+
+Explores **binning**, also known as discretization: converting continuous numerical values into intervals or groups.
+
+Methods covered:
+
+- **Custom Binning** — defining bin boundaries and labels with `pandas.cut()`.
+- **Uniform Binning** — dividing a numerical range into bins of equal width using `KBinsDiscretizer`.
+- **Quantile Binning** — creating bins based on quantiles.
+- **K-Means Binning** — using clustering to determine bin boundaries.
+- **Binarization** — converting numerical values into binary values based on a threshold.
+- **Decision Tree Binning** — using a decision tree to identify useful splits.
+
+The notebook also investigates bin edges, visualizes distributions, and explores how outliers and the number of bins can affect discretization.
+
+## 5. `Num-To-Cateorical-Using-Binning.ipynb`
+
+Explores why and how numerical features can be converted into categorical or discrete features through binning.
+
+The notebook investigates these use cases:
+
+1. **Reducing Overfitting** — testing discretization as a way to simplify a model's representation of numerical inputs.
+2. **Handling Non-Linear Relationships** — using binned features in regression and classification examples.
+3. **Handling Outliers** — examining discretization in the presence of extreme values.
+4. **Better Interpretability** — grouping numerical values into understandable intervals.
+5. **Model Compatibility** — comparing model behavior with discretized features, including experiments using the Wine Quality dataset.
+
+The notebook uses generated regression/classification data and loads the Wine Quality dataset in one experiment.
+
 ---
 
-## 🧰 Tools & Libraries
+# 🧰 Tools & Libraries
+
+### Programming and analysis
 
 - Python
 - Pandas
 - NumPy
-- Scikit-learn
 - Jupyter Notebook
 
-Key Scikit-learn components used:
+### Machine learning and preprocessing
+
+- Scikit-learn
+- `category_encoders` (used for count/frequency encoding examples)
+
+### Visualization
+
+- Matplotlib
+- Seaborn
+
+Key Scikit-learn components used across the notebooks include:
 
 ```python
 BaseEstimator
@@ -77,6 +143,11 @@ Pipeline
 SimpleImputer
 OrdinalEncoder
 OneHotEncoder
+LabelEncoder
+LabelBinarizer
+MultiLabelBinarizer
+KBinsDiscretizer
+Binarizer
 StandardScaler
 MinMaxScaler
 SelectKBest
@@ -85,21 +156,24 @@ cross_val_score
 
 ---
 
-## 📊 Datasets and Model Artifact
+# 📊 Datasets and Model Artifact
 
 | File | Purpose |
 |---|---|
-| `cars.csv` | Car data used in the ColumnTransformer and pipeline notebook |
-| `customer.csv` | Customer/review data used for transformation examples |
-| `pipe.pkl` | Serialized Scikit-learn pipeline exported from the notebook |
+| `cars.csv` | Car data used in categorical encoding and preprocessing examples |
+| `customer.csv` | Customer data used in encoding and transformation examples |
+| `train.csv` | Titanic training dataset used for numerical-to-categorical/binning experiments |
+| `pipe.pkl` | Serialized Scikit-learn pipeline exported from the pipeline notebook |
 
-`pipe.pkl` is a Python pickle artifact. Load it only from a trusted source. Pickled Scikit-learn objects can also depend on the library versions used when they were created; use a compatible environment when loading the file.
+Some notebooks also generate sample datasets or load datasets directly from external URLs.
+
+**About `pipe.pkl`:** This is a Python pickle artifact. Load it only from a trusted source. Pickled Scikit-learn objects may depend on the Scikit-learn and Python versions used when they were created, so a compatible environment may be required.
 
 ---
 
-## 🔄 Typical Preprocessing Pipeline
+# 🔄 Typical Feature Engineering Workflow
 
-The ColumnTransformer/Pipeline notebook follows this general sequence:
+The preprocessing and modeling notebooks demonstrate workflows such as:
 
 ```text
 Raw Dataset
@@ -109,6 +183,8 @@ Train-Test Split
 Missing Value Imputation
     ↓
 Categorical Encoding
+    ↓
+Numerical Binning / Discretization
     ↓
 Feature Scaling
     ↓
@@ -123,47 +199,54 @@ Hyperparameter Tuning
 Export Fitted Pipeline
 ```
 
-A key benefit of using a Scikit-learn `Pipeline` is that preprocessing steps and the estimator can be kept together, helping apply the same transformations consistently during training and prediction.
+Not every notebook uses every step. The sequence above summarizes the techniques explored across this folder.
+
+A key benefit of a Scikit-learn `Pipeline` is that preprocessing steps and the estimator can be kept together, helping apply transformations consistently during training and prediction. Fit data-dependent preprocessing steps on the training data, then use the fitted transformations on validation or test data to avoid data leakage.
 
 ---
 
-## ⚙️ Setup & Run
+# ⚙️ Setup & Run
 
 Run these commands from the repository root.
 
-### 1. Create and activate a virtual environment (optional)
+## 1. Create and activate a virtual environment (optional)
 
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-### 2. Install dependencies
+## 2. Install dependencies
 
 ```powershell
-pip install numpy pandas scikit-learn jupyter
+pip install numpy pandas scikit-learn matplotlib seaborn jupyter category-encoders
 ```
 
-### 3. Open Jupyter Notebook
+## 3. Start Jupyter Notebook
 
 ```powershell
 jupyter notebook
 ```
 
-Open either notebook from the `Feature Engineering` folder.
+Open a notebook from the `Feature Engineering` folder.
 
-> If you load `pipe.pkl`, use a compatible Scikit-learn version. The notebooks do not specify a pinned dependency version, so the environment may need to be adjusted to match the version used to create the artifact.
+> If you load `pipe.pkl`, use versions compatible with the environment in which the artifact was created. The notebooks do not provide a pinned dependency file.
 
 ---
 
-## 🎯 Learning Outcomes
+# 🎯 Learning Outcomes
 
 Through these notebooks, I practiced:
 
 - Understanding Scikit-learn's estimator and transformer interfaces
 - Creating custom estimators and transformers
 - Applying function-based transformations
-- Encoding categorical features
+- Encoding categorical features with ordinal, label, one-hot, and binarization techniques
+- Exploring count/frequency encoding
+- Handling unknown, infrequent, and missing categories
+- Converting continuous numerical features into bins
+- Comparing custom, uniform, quantile, K-Means, and decision-tree binning approaches
+- Investigating the effect of outliers and bin counts
 - Imputing missing values
 - Scaling numerical features
 - Selecting useful features
@@ -175,7 +258,7 @@ Through these notebooks, I practiced:
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Hemant Narute**  
 Aspiring Data Analyst | Data Scientist
@@ -184,4 +267,4 @@ Interests: Data Analytics, Data Science, Machine Learning, and MLOps.
 
 ---
 
-*This folder is a learning resource documenting practical feature-engineering and Scikit-learn preprocessing workflows.*
+*This folder is a learning resource documenting practical feature engineering and Scikit-learn preprocessing workflows.*
